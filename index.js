@@ -38,3 +38,16 @@ function squareSum(numbers){
   console.log(squareSum([1, 2, 2]));
 
 
+// задание 3
+
+
+function nearestSq(n){
+  return Math.round(Math.sqrt(n))**2;
+  }
+
+
+console.log(nearestSq(115)); // выводит 121
+console.log(nearestSq(144)); // выводит 144
+console.log(nearestSq(80)); // выводит 81
+
+
