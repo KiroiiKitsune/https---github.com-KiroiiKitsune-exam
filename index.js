@@ -103,3 +103,39 @@ function litres(time) {
 };
 console.log(litres(3));
 
+// задание 8 
+
+function invert(array) {
+  return array.map(num => num === 0 ? 0 : -num);   // используем метод map для обхода всех элементов массива и получения их аддитивной инверсии // Условие "num === 0 ? 0" нужно для того, чтобы 0 не превратился в -0
+}
+
+console.log(invert([1, 2, 3, 4, 5]));
+
+function powersOfTwo(n){
+  let result = []; 
+  for (let i = 0; i <= n; i++){ 
+      result.push(Math.pow(2,i)); 
+  } return result; 
+}console.log(powersOfTwo(4))
+
+
+// 10 задание 
+
+function grow(x){ 
+  let result = 1; 
+  for (let i = 0; i < x.length; i++){ 
+     result *= x[i];
+  }  return result; 
+}
+
+console.log(grow([1, 2, 3, 4]))
+
+// 2 вариант
+
+function grow(x){ 
+  return x.reduce((acc, curr) => acc * curr); 
+}
+
+console.log(grow([1, 2, 3, 4]))
+
+
