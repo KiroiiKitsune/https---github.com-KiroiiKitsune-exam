@@ -51,3 +51,39 @@ console.log(nearestSq(144)); // выводит 144
 console.log(nearestSq(80)); // выводит 81
 
 
+// задание 4
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("world"));
+console.log(reverseString("Привет"));
+
+// 5 задание 
+
+function addWordLength(str) {
+  let arr = str.split(" ");
+  let result = []; // 
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i] + " " + arr[i].length);
+  }
+  return result;
+}
+
+console.log(addWordLength("apple ban")); 
+console.log(addWordLength("you will win"));
+
+//   2 вариант
+
+function addLength(str){
+  return str.split(" ").map(function(word){
+  return word + " " + word.length;
+  });
+  }
+
+
+
+console.log(addLength("apple ban")); 
+console.log(addLength("you will win"));
+
