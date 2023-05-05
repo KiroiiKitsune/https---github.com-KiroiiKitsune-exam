@@ -87,3 +87,19 @@ function addLength(str){
 console.log(addLength("apple ban")); 
 console.log(addLength("you will win"));
 
+// задание 6 
+
+function mango(quantity, price){ 
+  let freeMango = Math.floor(quantity/3); 
+return (quantity - freeMango) * price; 
+}
+console.log(mango(5, 3))
+
+
+//  7 задание 
+
+function litres(time) {
+  return Math.floor(time * 0.5)
+};
+console.log(litres(3));
+
